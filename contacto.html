@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Practica 1</title>
+		<meta charset="utf-8">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Anton&family=Cabin&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="shortcut icon" type="image/x-icon" href="media/Dragonball_1_Icon_16.ico">
+		<script src="code.js" type="text/javascript"></script>
+	</head>
+	<body  style="margin: 0; margin-bottom: 120px;">
+		<header>
+			<h1>Practica HTML, CSS, JS</h1>
+			<img src="media/logo-tortuga.png"
+			alt="Logo DBZ"
+			id="logo-tortuga">
+				<nav id="menu-principal">
+					<ul>
+						<li><a href="home.html">Home</a></li>
+						<li><a href="pagina.html">Pagina 1</a></li>
+						<li><a href="pagina.html">Pagina 2</a></li>
+						<li><a href="contacto.html">Contacto</a></li>
+					</ul>
+				</nav>
+		</header>
+
+		<section style="position: relative; top: 70px; left: 0px">
+			<article style="position: relative; top: 100px; left: 7%; margin-top: 40px;">
+				<form method="post" action="result.php"> 
+				 	Nombre  <input type="text" id="nombre" onclick="javascript: corregir('nombre')"> <br><br>
+				 	Apellido <input type="text" id="apellido" onclick="javascript: corregir('apellido')"> <br><br>
+				 	Correo <input type="text" id="correo" onclick="javascript: corregir('correo')"> <br> <br>
+		 	
+				 	<select id="genero" required="" onclick="javascript: corregir('genero')">
+				 		<option class="pre-select" selected="" value="">-Genero-</option>
+				 		<option value="1">Masculino</option>
+				 		<option value="2">Femenino</option>
+				 	</select><br><br>
+
+				 	<input type="radio" name="opr"> Opc 1
+				 	<input type="radio" name="opr"> Opc 2	 	
+				 	<input type="radio" name="opr"> Opc 3 <br><br>
+				 	<textarea>Solicitud</textarea> <br>	<br>
+				 	Aceptar terminos y condiciones <input type="checkbox" name="check" id="terminos" > <br>
+				 	Recibir información <input type="checkbox" name="check"> <br> <br>
+				 	<input type="button" value="Enviar" onclick="javascript: confirmar(['nombre', 'apellido', 'correo', 'genero', 'terminos']);">
+				</form>
+			</article>
+
+			<article class="legal" >
+				<h2 style="font-size: 35px;">Aviso Legal</h2>
+				<p style="font-size: 25px">
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+				</p>
+			</article>
+
+			
+		</section>
+
+		<footer >
+			<img src="media/logo-L-DBZ.png" id="logo-L-DBZ" style="position: absolute; max-height: 50%; left: 80%; top: 25%">
+			<h3 style="position: absolute; left: 5%; top:0%">
+				&copy; Practica WEB 2020.
+			</h3>
+			<h3 style="position: absolute; left: 5%; top:40%; ">
+				@contacto-redes-sociales  |   @contacto-redes-sociales
+			</h3>
+				
+			
+		</footer> 
+
+	</body>
+</html>
